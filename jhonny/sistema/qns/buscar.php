@@ -42,6 +42,11 @@
     <h2 class="text-center" style="color: white;"><strong>RESULTADOS DE LA BÚSQUEDA</strong></h2>
     <table class='table table-dark table-hover'>
       <thead>
+        <tr>
+          <th><center><strong>ID</strong></center></th>
+          <th><center><strong>NOMBRE</strong></center></th>
+          <th><center><strong>MENSAJE</strong></center></th>
+        </tr>
         <br>
       </thead>
       <tbody>
@@ -73,44 +78,44 @@
 
           }
 
-          } else {
+        } else {
           
-            echo '<div style="background-color: black;">
-            <h2 class="text-center" style="color: white;"><strong>No hay resultados</strong></h2>
-            </div>';
+          echo '<div style="background-color: black;">
+          <h2 class="text-center" style="color: white;"><strong>No hay resultados</strong></h2>
+          </div>';
           
-          }
+        }
 
-          include "../../funciones/close.php";
+        include "../../funciones/close.php";
 
      //   }
 
-          ?>
+        ?>
 
-        </tbody>
-      </table><br>
+      </tbody>
+    </table><br>
+  </div>
+
+  <span class="ir-arriba"><strong>^</strong></span>
+
+  <!-- Pie de página -->
+  <footer class="pie1">
+    <!-- Imágenes redireccionables -->
+    <div class="container" align="center">
+      <a style="margin: 20px" href="https://jw.org/es" target="_blank"><img id="jw" src="https://movilsagt.com/jw/files/2016/01/JW-NUEVO.jpg">SITIO OFICIAL DE LOS TESTIGOS DE JEHOVÁ</a> <!-- Apertura en otra pestaña -->
+      <a style="margin: 20px" href="https://my.jw.org/home/es" target="_blank"><img id="apps" src="https://assets1.jw.org/images/siteMarkApps_mobile.svg">DOMINIO DE LA CONGREGACIÓN</a>
+      <a style="margin: 20px" href="https://wol.jw.org/es" target="_blank"><img id="wol" src="https://pbs.twimg.com/media/EFglz6RWoAAmj_P.jpg">BIBLIOTECA EN LÍNEA</a>
     </div>
 
-    <span class="ir-arriba"><strong>^</strong></span>
+    <br>
 
-    <!-- Pie de página -->
-    <footer class="pie1">
-      <!-- Imágenes redireccionables -->
-      <div class="container" align="center">
-        <a style="margin: 20px" href="https://jw.org/es" target="_blank"><img id="jw" src="https://movilsagt.com/jw/files/2016/01/JW-NUEVO.jpg">SITIO OFICIAL DE LOS TESTIGOS DE JEHOVÁ</a> <!-- Apertura en otra pestaña -->
-        <a style="margin: 20px" href="https://my.jw.org/home/es" target="_blank"><img id="apps" src="https://assets1.jw.org/images/siteMarkApps_mobile.svg">DOMINIO DE LA CONGREGACIÓN</a>
-        <a style="margin: 20px" href="https://wol.jw.org/es" target="_blank"><img id="wol" src="https://pbs.twimg.com/media/EFglz6RWoAAmj_P.jpg">BIBLIOTECA EN LÍNEA</a>
-      </div>
+    <!-- Texto de derechos de autor -->
+    <div class="container" align="center">
+      <p id="foot">All rights reserved. Copyrights by Jonathán Sánchez ©</p>  <!-- Etiqueta de comentario -->
+      <p id="foot">Versión 1.0.0</p>
+      <p id="foot">Last release 2020</p>
+    </div>
+  </footer>
 
-      <br>
-
-      <!-- Texto de derechos de autor -->
-      <div class="container" align="center">
-        <p id="foot">All rights reserved. Copyrights by Jonathán Sánchez ©</p>  <!-- Etiqueta de comentario -->
-        <p id="foot">Versión 1.0.0</p>
-        <p id="foot">Last release 2020</p>
-      </div>
-    </footer>
-
-  </body>
-  </html>
+</body>
+</html>
