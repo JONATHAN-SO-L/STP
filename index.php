@@ -30,31 +30,36 @@
 
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark"></nav>
 
-	<div class="container">
-		<h2 style="color: white;"><strong><center>¡Bienvenido al Sistema de Seguimiento Teocrático Personal!</center></strong></h2>
-	</div><br>
-
-	<div class="container">
-		<form method="POST" action="/stp/valis/vali_login.php">
-			<center>
-				<img class="login" src="/stp/jhonny/img/logo.png">
-				<h2>Iniciar Sesión</h2>
-				<input class="form-control" type="text" name="usuario" placeholder="Usuario" required>
-				<br>
-				<input class="form-control" type="password" name="contrasena" placeholder="Contraseña" required>
-				<br>
-				<input class="btn btn-success" type="submit" name="ingresar" value="INGRESAR">
-			</center>
-		</form>
+	<div class="alert alert-danger">
+		<center><strong>ANUNCIO: </strong> Por el momento, la gráfica del servicio por año esta deshabilitada y será activada en una posterior actualización
+		<button type="button" class="close" data-dismiss="alert">&times;</center></button>
 	</div>
 
-	<footer class="pie1">
-		<div class="container" align="center">
-			<p id="foot">All rights reserved. Copyrights by Jonathán Sánchez ©</p>
-			<p id="foot">Versión 1.0.0</p>
-			<p id="foot">Last release 2020</p>
-		</div>
-	</footer>
+			<div class="container">
+				<h2 style="color: white;"><strong><center>¡Bienvenido al Sistema de Seguimiento Teocrático Personal!</center></strong></h2>
+			</div><br>
 
-</body>
-</html>
+			<div class="container">
+				<form method="POST" action="/stp/valis/vali_login.php">
+					<center>
+						<img class="login" src="/stp/jhonny/img/logo.png">
+						<h2>Iniciar Sesión</h2>
+						<input class="form-control" type="text" name="usuario" placeholder="Usuario" required>
+						<br>
+						<input class="form-control" type="password" name="contrasena" placeholder="Contraseña" required>
+						<br>
+						<input class="btn btn-success" type="submit" name="ingresar" value="INGRESAR">
+					</center>
+				</form>
+			</div>
+
+			<footer class="pie1">
+				<div class="container" align="center">
+					<p id="foot">All rights reserved. Copyrights by Jonathán Sánchez ©</p>
+					<p id="foot">Versión 1.0.0</p>
+					<p id="foot">Last release 2020</p>
+				</div>
+			</footer>
+
+		</body>
+		</html>

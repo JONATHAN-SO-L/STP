@@ -22,12 +22,22 @@
     <img src="/stp/lily/img/logo.png" alt="logo" style="width:40px;">
   </a>
 
-<!-- Menú -->
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">SEGUIMIENTO TEOCRÁTICO</a>
-    </li>
-  </ul>
+  <div class="collapse navbar-collapse " id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">SEGUIMIENTO TEOCRÁTICO</a>
+      </li>
+    </ul>
+  </div>
+
+  <form class="float-lg-right">
+    <a href="/stp/valis/destruir.php" class="btn btn-danger btn-sm">CERRAR SESIÓN</a>
+  </form>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
 </nav>
 
 <br>

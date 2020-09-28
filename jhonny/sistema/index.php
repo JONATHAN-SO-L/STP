@@ -14,26 +14,37 @@
 
 <body>	<!-- Cuerpo de la aplicación web -->
 
-<!-- Barra de navegación -->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
- 
- <!-- Logo -->
-  <a class="navbar-brand" href="#">
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+   <!-- Logo -->
+   <a class="navbar-brand" href="#">
     <img src="/stp/jhonny/img/logo.png" alt="logo" style="width:40px;">
   </a>
 
-<!-- Menú -->
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">SEGUIMIENTO TEOCRÁTICO</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="https://cp1.awardspace.net/login/" target="_blank">ADMIN</a>
-    </li>
-	    <li class="nav-item">
-      <a class="nav-link" href="/stp/jhonny/sistema/qns/qns.php">Q&S</a>
-    </li>
-  </ul>
+  <!-- Menú -->
+  <div class="collapse navbar-collapse " id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">SEGUIMIENTO TEOCRÁTICO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://cp1.awardspace.net/login/" target="_blank">ADMIN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/stp/jhonny/sistema/qns/qns.php">Q&S</a>
+      </li>
+    </ul>
+  </div>
+
+  <form class="float-lg-right">
+    <a href="/stp/valis/destruir.php" class="btn btn-danger btn-sm">CERRAR SESIÓN</a>
+  </form>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
 </nav>
 
 <br>
@@ -44,20 +55,20 @@
 <div class="botones">
 
 	<!-- Botones de acceso -->
-<!-- Sección 1 -->
-	<div class="container" align="center">
-		<a class="boton" href="/stp/jhonny/sistema/ep"><button style="margin: 10px" type="sumbit" class="btn btn-primary active btn-lg"><img id="ep" src="/stp/jhonny/img/ep.png">ESTUDIO PERSONAL</button></a>	<!--Separación entre botones -->
+  <!-- Sección 1 -->
+  <div class="container" align="center">
+    <a class="boton" href="/stp/jhonny/sistema/ep"><button style="margin: 10px" type="sumbit" class="btn btn-primary active btn-lg"><img id="ep" src="/stp/jhonny/img/ep.png">ESTUDIO PERSONAL</button></a>	<!--Separación entre botones -->
 
-		<a class="boton" href="/stp/jhonny/sistema/lb"><button style="margin: 10px" type="sumbit" class="btn btn-primary active btn-lg"><img id="lb" src="/stp/jhonny/img/lb.png">LECTURA DE LA BÍBLIA</button></a>
+    <a class="boton" href="/stp/jhonny/sistema/lb"><button style="margin: 10px" type="sumbit" class="btn btn-primary active btn-lg"><img id="lb" src="/stp/jhonny/img/lb.png">LECTURA DE LA BÍBLIA</button></a>
 
-		<a class="boton" href="/stp/jhonny/sistema/ml"><button style="margin: 10px" type="sumbit" class="btn btn-primary active btn-lg"><img id="ml" src="/stp/jhonny/img/ml.png">META DE LIBROS</button></a>
-	</div>
+    <a class="boton" href="/stp/jhonny/sistema/ml"><button style="margin: 10px" type="sumbit" class="btn btn-primary active btn-lg"><img id="ml" src="/stp/jhonny/img/ml.png">META DE LIBROS</button></a>
+  </div>
 
-<!-- Sección 2 -->
-	<div class="container" align="center">
-		<a class="boton" href="/stp/jhonny/sistema/im"><button style="margin: 10px" type="sumbit" class="btn btn-primary active btn-lg"><img id="im" src="/stp/jhonny/img/im.png">INFORME MENSUAL</button></a>
+  <!-- Sección 2 -->
+  <div class="container" align="center">
+    <a class="boton" href="/stp/jhonny/sistema/im"><button style="margin: 10px" type="sumbit" class="btn btn-primary active btn-lg"><img id="im" src="/stp/jhonny/img/im.png">INFORME MENSUAL</button></a>
     <a class="boton" href="/stp/jhonny/sistema/aef"><button style="margin: 10px" type="sumbit" class="btn btn-primary active btn-lg"><img id="aef" src="/stp/jhonny/img/aef.png">ADORACIÓN EN FAMILIA</button></a>
-	</div>
+  </div>
 </div>
 <br>
 
@@ -111,14 +122,14 @@
 		<a style="margin: 20px" href="https://wol.jw.org/es" target="_blank"><img id="wol" src="https://pbs.twimg.com/media/EFglz6RWoAAmj_P.jpg">BIBLIOTECA EN LÍNEA</a>
 	</div>
 
-<br>
+  <br>
 
-<!-- Texto de derechos de autor -->
-	<div class="container" align="center">
-		<p id="foot">All rights reserved. Copyrights by Jonathán Sánchez ©</p>	<!-- Etiqueta de comentario -->
-		<p id="foot">Versión 1.0.0</p>
-		<p id="foot">Last release 2020</p>
-	</div>
+  <!-- Texto de derechos de autor -->
+  <div class="container" align="center">
+    <p id="foot">All rights reserved. Copyrights by Jonathán Sánchez ©</p>	<!-- Etiqueta de comentario -->
+    <p id="foot">Versión 1.0.0</p>
+    <p id="foot">Last release 2020</p>
+  </div>
 </footer>
 
 </body>	<!-- Cierre del cuerpo de la aplicación web -->
