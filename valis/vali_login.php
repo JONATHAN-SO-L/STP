@@ -33,7 +33,7 @@ switch ($type[9]) {
 		break;
 
 		default:
-		echo "<strong>DATOS INCORRECTOS</strong>";
+		header('Location: /stp/valis/data_failed.php');
 		break;
 	}
 	break;
@@ -59,13 +59,13 @@ switch ($type[9]) {
 		break;
 		
 		default:
-		echo "<strong>DATOS INCORRECTOS</strong>";
+		header('Location: /stp/valis/data_failed.php');
 		break;
 	}
 	break;
 	
 	default:
-	echo "<strong>NO SE PUDO DEFINIR EL TIPO DE USUARIO</strong>";
+	header('Location: /stp/valis/data_failed.php');
 	break;
 }
 
