@@ -31,7 +31,7 @@
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark"></nav>
 
 	<div class="alert alert-danger">
-		<center><strong>ANUNCIO: </strong> Por el momento, la gráfica del servicio por año esta deshabilitada y será activada en una posterior actualización
+		<center><strong>ANUNCIO: </strong> Por el momento, la gráfica del servicio por año esta deshabilitada y será activada en una posterior <i>actualización</i>
 		<button type="button" class="close" data-dismiss="alert">&times;</center></button>
 	</div>
 
