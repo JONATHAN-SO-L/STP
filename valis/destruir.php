@@ -4,6 +4,6 @@ session_start();
 session_unset();
 session_destroy();
 
-header('Location: /stp');
+echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp">';
 
 ?>

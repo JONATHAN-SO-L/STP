@@ -30,10 +30,10 @@
 
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark"></nav>
 
-	<div class="alert alert-danger">
+	<!--<div class="alert alert-danger">
 		<center><strong>ANUNCIO: </strong> Por el momento, la gráfica del servicio por año esta deshabilitada y será activada en una posterior <i>actualización</i>
 		<button type="button" class="close" data-dismiss="alert">&times;</center></button>
-	</div>
+	</div>-->
 
 			<div class="container">
 				<h2 style="color: white;"><strong><center>¡Bienvenido al Sistema de Seguimiento Teocrático Personal!</center></strong></h2>

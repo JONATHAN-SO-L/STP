@@ -2,7 +2,7 @@
 <html lang="es">	<!-- Idioma de la aplicación -->
 <head>
 
-	<?php header('Location: /stp/diego/sistema/');?>	<!-- Redireccionamiento mediante php -->
+	<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/diego/sistema">
 
 </head>
 </html>	<!-- Fin del documento -->
