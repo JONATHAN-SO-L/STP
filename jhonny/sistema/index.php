@@ -29,7 +29,7 @@
         <a class="nav-link" href="#">SEGUIMIENTO TEOCRÁTICO</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://cp1.awardspace.net/login/" target="_blank">ADMIN</a>
+        <a class="nav-link" href="#" target="_blank">ADMIN</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/stp/jhonny/sistema/qns/qns.php">Q&S</a>
