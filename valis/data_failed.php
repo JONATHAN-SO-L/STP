@@ -20,7 +20,7 @@
 			<h2><strong><center>¡ALGO HA SALIDO MAL!</center></strong></h2>
 		</div>
 		<h4 style="color: white;"><center>Lamentablemente tus datos son incorrectos y no pudimos mostrar tu panel de usuario</center></h4><br>
-		<center><button class="btn btn-lg btn-danger"><a href="/stp/valis/destruir.php">INTÉNTALO DE NUEVO</a></button></center>
+		<center><a href="/stp/valis/destruir.php"><button class="btn btn-lg btn-danger">INTÉNTALO DE NUEVO</button></a></center>
 	</div>
 
 	<footer class="pie1">

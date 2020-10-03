@@ -14,7 +14,7 @@ $type = json_encode($existencia);
 switch ($type[9]) {
 	case 'A':
 	session_start();
-	$_SESSION['usuario'] == 'Admin';
+	$_SESSION['usuario'] = $user;
 	echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/jhonny">';
 	break;
 
@@ -22,13 +22,13 @@ switch ($type[9]) {
 	switch ($pass) {
 		case '24-03-2007':
 		session_start();
-		$_SESSION['usuario'] == 'Constantino';
+		$_SESSION['usuario'] = $user;
 		echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/constantino">';
 		break;
 
 		case '30-07-2011':
 		session_start();
-		$_SESSION['usuario'] == 'Diego';
+		$_SESSION['usuario'] = $user;
 		echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/diego">';
 		break;
 
@@ -42,19 +42,19 @@ switch ($type[9]) {
 	switch ($pass) {
 		case '24-03-2007':
 		session_start();
-		$_SESSION['usuario'] == 'Soledad';
+		$_SESSION['usuario'] = $user;
 		echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/soledad">';
 		break;
 
 		case '08-03-2008':
 		session_start();
-		$_SESSION['usuario'] == 'Aleida';
+		$_SESSION['usuario'] = $user;
 		echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/aleida">';
 		break;
 
 		case '06-11-2010':
 		session_start();
-		$_SESSION['usuario'] == 'Lily';
+		$_SESSION['usuario'] = $user;
 		echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/lily">';
 		break;
 		

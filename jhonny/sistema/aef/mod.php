@@ -1,7 +1,32 @@
 <?php
 
+session_start();
+
+if (isset($_SESSION['usuario'])) {
+  switch ($_SESSION['usuario']) {
+    case 'contantino':
+    echo "<meta HTTP-EQUIV='REFRESH' CONTENT='0;URL=/stp/'>";
+    break;
+
+    case 'diego':
+    echo "<meta HTTP-EQUIV='REFRESH' CONTENT='0;URL=/stp/'>";
+    break;
+
+    case 'soledad':
+    echo "<meta HTTP-EQUIV='REFRESH' CONTENT='0;URL=/stp/'>";
+    break;
+
+    case 'aleida':
+    echo "<meta HTTP-EQUIV='REFRESH' CONTENT='0;URL=/stp/'>";
+    break;
+
+    case 'lily':
+    echo "<meta HTTP-EQUIV='REFRESH' CONTENT='0;URL=/stp/'>";
+    break;
+
+    default:
     // Si se presionó el botón "GUARDAR" se inicia el código
-if (isset($_POST['guardar'])) {
+    if (isset($_POST['guardar'])) {
 
     include "../../funciones/conexion.php"; // Se incluye la conexión a la DDBB
 
@@ -24,4 +49,9 @@ if (isset($_POST['guardar'])) {
       include "../../funciones/close.php";  // Se cierra la conexión a la DDBB
 
         echo "<meta HTTP-EQUIV='REFRESH' CONTENT='0;URL=/stp/jhonny/sistema/aef'>";  // Se redirecciona al index del apartado mediante HTML5
-        ?>
+        break;
+      }
+    } else {
+      echo "<meta HTTP-EQUIV='REFRESH' CONTENT='0;URL=/stp/'>";
+    }
+    ?>
