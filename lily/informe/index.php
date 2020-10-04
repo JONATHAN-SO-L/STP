@@ -1,5 +1,30 @@
 <?php
 
+session_start();
+
+if (isset($_SESSION['usuario'])) {
+  switch ($_SESSION['usuario']) {
+    case 'aleida':
+    echo "<meta HTTP-EQUIV='REFRESH' CONTENT='0;URL=/stp/'>";
+    break;
+
+    case 'constantino':
+    echo "<meta HTTP-EQUIV='REFRESH' CONTENT='0;URL=/stp/'>";
+    break;
+
+    case 'soledad':
+    echo "<meta HTTP-EQUIV='REFRESH' CONTENT='0;URL=/stp/'>";
+    break;
+
+    case 'sanceznarval00@outlook.com':
+    echo "<meta HTTP-EQUIV='REFRESH' CONTENT='0;URL=/stp/'>";
+    break;
+
+    case 'diego':
+    echo "<meta HTTP-EQUIV='REFRESH' CONTENT='0;URL=/stp/'>";
+    break;
+
+    default:
 // Se hace la requisición de la librería de FPDF
 require('fpdf/fpdf.php');
 

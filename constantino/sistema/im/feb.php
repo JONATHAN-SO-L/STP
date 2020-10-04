@@ -1,3 +1,34 @@
+<?php 
+
+session_start();
+
+if (isset($_SESSION['usuario'])) {
+  
+  if ($_SESSION['usuario'] == 'aleida') {
+    echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/">';
+  } else {}
+
+  if ($_SESSION['usuario'] == 'diego') {
+    echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/">';
+  } else {}
+
+  if ($_SESSION['usuario'] == 'soledad') {
+    echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/">';
+  } else {}
+
+  if ($_SESSION['usuario'] == 'sanceznarval00@outlook.com') {
+    echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/">';
+  } else {}
+
+  if ($_SESSION['usuario'] == 'lily') {
+    echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/">';
+  } else {}
+} else {
+  echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/">';
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,123 +46,123 @@
 
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-  <a class="navbar-brand" href="#">
-    <img src="/stp/constantino/img/logo.png" alt="logo" style="width:40px;">
-  </a>
+    <a class="navbar-brand" href="#">
+      <img src="/stp/constantino/img/logo.png" alt="logo" style="width:40px;">
+    </a>
 
-  <div class="collapse navbar-collapse " id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a style="margin: 5px;" class="nav-link" href="#">SEGUIMIENTO TEOCRÁTICO</a>
-      </li>
-    </ul>
-  </div>
+    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a style="margin: 5px;" class="nav-link" href="#">SEGUIMIENTO TEOCRÁTICO</a>
+        </li>
+      </ul>
+    </div>
 
-  <form class="form-inline float-lg-right" id="volver">
-    <a href="/stp/constantino/sistema/im" class="btn btn-danger btn-sm">VOLVER</a>
-  </form>
-  
-</nav>
-<br>
+    <form class="form-inline float-lg-right" id="volver">
+      <a href="/stp/constantino/sistema/im" class="btn btn-danger btn-sm">VOLVER</a>
+    </form>
+    
+  </nav>
+  <br>
 
-<?php
+  <?php
 
   include "../../funciones/conexion.php";
 
-    $resultado = mysqli_query($conexion,"SELECT EXISTS (SELECT * FROM febrero_c);");
-    $row=mysqli_fetch_row($resultado);
+  $resultado = mysqli_query($conexion,"SELECT EXISTS (SELECT * FROM febrero_c);");
+  $row=mysqli_fetch_row($resultado);
 
-      if ($row[0]=="1") {
+  if ($row[0]=="1") {
 
-        $resultado = mysqli_query($conexion, "SELECT * FROM febrero_c");
+    $resultado = mysqli_query($conexion, "SELECT * FROM febrero_c");
 
-      while ($febrero = mysqli_fetch_array($resultado)) {
-
-      echo "
-            <br><br>
-              <div class='container'>
-                  <div class='alert alert-success alert-dismissible fade show'>
-                    <button type='button' class='close' data-dismiss='alert'>&times;</button>
-                    <strong><center>Ya tienes este mes con tu actividad, mírala aquí abajo</center></strong>
-              </div>";
+    while ($febrero = mysqli_fetch_array($resultado)) {
 
       echo "
-              <div class='container'> 
-                  <table class='table table-dark table-hover'>
-                    <tr>
-                      <td><center>PUBLICACIONES</center></td>
-                      <td><center><strong>".$febrero['publicaciones']."</strong></center></td>
-                    </tr>
-                    <tr>
-                      <td><center>VIDEOS</center></td>
-                      <td><center><strong>".$febrero['videos']."</strong></center></td>
-                    </tr>
-                    <tr>
-                      <td><center>HORAS</center></td>
-                      <td><center><strong>".$febrero['horas']."</strong></center></td>
-                    </tr>
-                    <tr>
-                      <td><center>REVISITAS</center></td>
-                      <td><center><strong>".$febrero['revisitas']."</strong></center></td>
-                    </tr>
-                    <tr>
-                      <td><center>NÚMERO DE <i> DIFERENTES </i><br> CURSOS BÍBLICOS DIRIGIDOS</center></td>
-                      <td><center><strong>".$febrero['cursos']."</strong></center></td>
-                    </tr>
-                    <tr>
-                      <td><center>COMENTARIOS</center></td>
-                      <td><center><strong>".$febrero['comentarios']."</strong></center></td>
-                    </tr>
-                </table>
-                <div class='form-group'>
-                  <center>
-                  <a href='/stp/constantino/sistema/im/mod2.php' class='btn active btn-warning' style='color:white;'>MODIFICAR INFORME</a>
-                  </center>
-                </div>
-              </div>
-            <br><br>";}
+      <br><br>
+      <div class='container'>
+      <div class='alert alert-success alert-dismissible fade show'>
+      <button type='button' class='close' data-dismiss='alert'>&times;</button>
+      <strong><center>Ya tienes este mes con tu actividad, mírala aquí abajo</center></strong>
+      </div>";
 
-      } else {
+      echo "
+      <div class='container'> 
+      <table class='table table-dark table-hover'>
+      <tr>
+      <td><center>PUBLICACIONES</center></td>
+      <td><center><strong>".$febrero['publicaciones']."</strong></center></td>
+      </tr>
+      <tr>
+      <td><center>VIDEOS</center></td>
+      <td><center><strong>".$febrero['videos']."</strong></center></td>
+      </tr>
+      <tr>
+      <td><center>HORAS</center></td>
+      <td><center><strong>".$febrero['horas']."</strong></center></td>
+      </tr>
+      <tr>
+      <td><center>REVISITAS</center></td>
+      <td><center><strong>".$febrero['revisitas']."</strong></center></td>
+      </tr>
+      <tr>
+      <td><center>NÚMERO DE <i> DIFERENTES </i><br> CURSOS BÍBLICOS DIRIGIDOS</center></td>
+      <td><center><strong>".$febrero['cursos']."</strong></center></td>
+      </tr>
+      <tr>
+      <td><center>COMENTARIOS</center></td>
+      <td><center><strong>".$febrero['comentarios']."</strong></center></td>
+      </tr>
+      </table>
+      <div class='form-group'>
+      <center>
+      <a href='/stp/constantino/sistema/im/mod2.php' class='btn active btn-warning' style='color:white;'>MODIFICAR INFORME</a>
+      </center>
+      </div>
+      </div>
+      <br><br>";}
 
-        echo '  <div class="container">
-    <form class="form-inline" id="informe" method="POST" action="#"><br>
+    } else {
+
+      echo '  <div class="container">
+      <form class="form-inline" id="informe" method="POST" action="#"><br>
       <h3 class="titulo_informe"><center><strong>INFORME DE FEBRERO</strong></center></h3><br>
-          <div class="form-inline" align="center">
-            <label style="margin: 20px;" ><strong>PUBLICACIONES (IMPRESAS Y ELECTRÓNICAS):</strong></label>
-            <input style="margin: 5px;" required="#" type="number" min="0" class="form-control" id="publicaciones" name="publicaciones" placeholder="0">
-          </div><br>
-          <div class="form-inline">
-            <label style="margin: 20px;" ><strong>PRESENTACIONES DE VIDEOS:</strong></label>
-            <input style="margin: 5px;" required="#" type="number" min="0" class="form-control" id="videos" name="videos" placeholder="0">
-          </div><br>
-          <div class="form-inline">
-            <label style="margin: 20px;" ><strong>HORAS:</strong></label>
-            <input style="margin: 5px;" required="#" type="number" min="0" class="form-control" id="horas" name="horas" placeholder="0">
-          </div><br>
-          <div class="form-inline">
-            <label style="margin: 20px;" ><strong>REVISITAS:</strong></label>
-            <input style="margin: 5px;" required="#" type="number" min="0" class="form-control" id="revisitas" name="revisitas" placeholder="0">
-          </div><br>
-          <div class="form-inline">
-            <label style="margin: 20px;" ><strong>NÚMERO DE <i>DIFERENTES</i> CURSOS BÍBLICOS DIRIGIDOS:</strong></label>
-            <input style="margin: 5px;" required="#" type="number" min="0" class="form-control" id="cursos" name="cursos" placeholder="0">
-          </div><br>
-          <div class="form-inline">
-            <label style="margin: 20px;" ><strong>COMENTARIOS:</strong></label>
-            <textarea style="margin: 20px;"  class="form-control-lg" rows="10" id="comentarios" name="comentarios" placeholder="Ingresa tus comentarios aquí"></textarea>
-          </div>
-          <div class="form-group">
-            <input style="margin: 20px;" type="submit" class="btn btn-success" id="guardar" name="guardar" value="GUARDAR INFORME">
-          </div>
-          <br>
-        </form>
+      <div class="form-inline" align="center">
+      <label style="margin: 20px;" ><strong>PUBLICACIONES (IMPRESAS Y ELECTRÓNICAS):</strong></label>
+      <input style="margin: 5px;" required="#" type="number" min="0" class="form-control" id="publicaciones" name="publicaciones" placeholder="0">
+      </div><br>
+      <div class="form-inline">
+      <label style="margin: 20px;" ><strong>PRESENTACIONES DE VIDEOS:</strong></label>
+      <input style="margin: 5px;" required="#" type="number" min="0" class="form-control" id="videos" name="videos" placeholder="0">
+      </div><br>
+      <div class="form-inline">
+      <label style="margin: 20px;" ><strong>HORAS:</strong></label>
+      <input style="margin: 5px;" required="#" type="number" min="0" class="form-control" id="horas" name="horas" placeholder="0">
+      </div><br>
+      <div class="form-inline">
+      <label style="margin: 20px;" ><strong>REVISITAS:</strong></label>
+      <input style="margin: 5px;" required="#" type="number" min="0" class="form-control" id="revisitas" name="revisitas" placeholder="0">
+      </div><br>
+      <div class="form-inline">
+      <label style="margin: 20px;" ><strong>NÚMERO DE <i>DIFERENTES</i> CURSOS BÍBLICOS DIRIGIDOS:</strong></label>
+      <input style="margin: 5px;" required="#" type="number" min="0" class="form-control" id="cursos" name="cursos" placeholder="0">
+      </div><br>
+      <div class="form-inline">
+      <label style="margin: 20px;" ><strong>COMENTARIOS:</strong></label>
+      <textarea style="margin: 20px;"  class="form-control-lg" rows="10" id="comentarios" name="comentarios" placeholder="Ingresa tus comentarios aquí"></textarea>
+      </div>
+      <div class="form-group">
+      <input style="margin: 20px;" type="submit" class="btn btn-success" id="guardar" name="guardar" value="GUARDAR INFORME">
+      </div>
+      <br>
+      </form>
       </div>
 
-<br>';
+      <br>';
 
-        if (isset($_POST['guardar'])) {
+      if (isset($_POST['guardar'])) {
 
         $pubs = $_POST['publicaciones'];
         $videos = $_POST['videos'];
@@ -145,25 +176,25 @@
         echo "<script>alert('INFORME REGISTRADO')</script>";
 
         echo "<meta HTTP-EQUIV='REFRESH' CONTENT='0;URL=/stp/constantino/sistema/im'>";
-      
+        
       }
 
     }
 
-      include "../../funciones/close.php";
-?>
+    include "../../funciones/close.php";
+    ?>
 
-<footer class="pie3">
-  <div class="container" align="center">
-    <a style="margin: 20px" href="https://my.jw.org/home/es" target="_blank"><img id="apps" src="https://assets1.jw.org/images/siteMarkApps_mobile.svg">DOMINIO DE LA CONGREGACIÓN</a>
-  </div>
+    <footer class="pie3">
+      <div class="container" align="center">
+        <a style="margin: 20px" href="https://my.jw.org/home/es" target="_blank"><img id="apps" src="https://assets1.jw.org/images/siteMarkApps_mobile.svg">DOMINIO DE LA CONGREGACIÓN</a>
+      </div>
 
-<br>
+      <br>
 
-  <div class="container" align="center">
-    <p id="foot">All rights reserved. Copyrights by Jonathán Sánchez ©</p>
-  </div>
-</footer>
+      <div class="container" align="center">
+        <p id="foot">All rights reserved. Copyrights by Jonathán Sánchez ©</p>
+      </div>
+    </footer>
 
-</body>
-</html>
+  </body>
+  </html>

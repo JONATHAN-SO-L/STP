@@ -1,3 +1,34 @@
+<?php 
+
+session_start();
+
+if (isset($_SESSION['usuario'])) {
+  
+  if ($_SESSION['usuario'] == 'aleida') {
+    echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/">';
+  } else {}
+
+  if ($_SESSION['usuario'] == 'constantino') {
+    echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/">';
+  } else {}
+
+  if ($_SESSION['usuario'] == 'soledad') {
+    echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/">';
+  } else {}
+
+  if ($_SESSION['usuario'] == 'sanceznarval00@outlook.com') {
+    echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/">';
+  } else {}
+
+  if ($_SESSION['usuario'] == 'diego') {
+    echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/">';
+  } else {}
+} else {
+  echo '<meta HTTP-EQUIV="REFRESH" CONTENT="0;URL=/stp/">';
+}
+
+?>
+
 <!DOCTYPE html>	<!-- Inicio del documento identificado como HTML5 -->
 <html lang="es">	<!-- Lenguaje español -->
 <head>	<!-- Cabeza de la aplicación web -->
