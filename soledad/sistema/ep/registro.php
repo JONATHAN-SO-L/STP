@@ -12,7 +12,7 @@ if (isset($_SESSION['usuario'])) {
 		echo "<meta HTTP-EQUIV='REFRESH' CONTENT='0;URL=/stp/'>";
 		break;
 
-		case 'soledad':
+		case 'lily':
 		echo "<meta HTTP-EQUIV='REFRESH' CONTENT='0;URL=/stp/'>";
 		break;
 
